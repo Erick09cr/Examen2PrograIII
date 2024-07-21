@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Examen.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Sistema de Votaciones</title>
+    <link rel="stylesheet" href="styles.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="formMaster" runat="server">
+        <header>
+            <div class="container">
+                <h1>Sistema de Votaciones</h1>
+                <nav>
+                    <ul>
+                        <li><a href="Inicio.aspx">Inicio</a></li>
+                        <li><a href="IngresarCandidatos.aspx">Ingresar Candidatos</a></li>
+                        <li><a href="Votante.aspx">Votante</a></li>
+                        <li><a href="Votaciones.aspx">Votaciones</a></li>
+                        <li><a href="Resultados.aspx">Resultados</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
